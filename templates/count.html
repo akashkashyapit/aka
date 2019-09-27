@@ -1,0 +1,12 @@
+<h1>Result of count words</h1>
+<a href="{% url 'home' %}">Back to home page</a>
+<h2>What we are written</h2>
+{{ d }}
+<h2>No. Of words</h2>
+{{ l }}<br>
+
+<h2>Repeatition  Of words</h2>
+{% for word, value in dit %}
+{{word}}={{value}}
+<br>
+{% endfor%}
